@@ -1,0 +1,13 @@
+Source: opencode
+Section: utils
+Priority: optional
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.4
+Homepage: https://opencode.ai
+
+Package: opencode
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Duckdb as a .deb
+ DuckDB is a fast database system.

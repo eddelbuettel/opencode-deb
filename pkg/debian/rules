@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	tar xfz opencode-linux-x64.tar.gz
+
+override_dh_auto_install:
+	mkdir -p debian/opencode/usr/bin
+	install opencode debian/opencode/usr/bin/
+
+override_dh_auto_clean:
+	rm -f opencode
+
+override_dh_strip:
+	echo No strip
