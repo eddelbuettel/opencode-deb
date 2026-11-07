@@ -59,3 +59,9 @@ if (file.exists(newdeb))
 #    cat("Deleting", olddeb, "\n")
 #    res <- file.remove(olddeb)
 #}
+
+if (length(pkgs) >= 2) {
+    setwd("..")
+    f <- list.files(pattern=paste0("*", pkgs[2], "*"), full.names = TRUE)
+    unlink(f)
+}
