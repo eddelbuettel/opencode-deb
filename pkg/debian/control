@@ -9,5 +9,5 @@ Homepage: https://opencode.ai
 Package: opencode
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Duckdb as a .deb
- DuckDB is a fast database system.
+Description: Opencode as a .deb
+ Opencode is an open source coding agent.
