@@ -50,7 +50,7 @@ system(cmd)
 
 unlink(tgt)
 
-newdeb <- paste0("../opencode_", ver, "_amd64.deb")
+newdeb <- paste0("../opencode_", release, "_amd64.deb")
 if (file.exists(newdeb))
     res <- file.copy(newdeb, "~/git/ppa-rstudio/docs")
 
